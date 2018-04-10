@@ -1,19 +1,18 @@
 package aplication.domain.usecase;
 
 import aplication.data.repository.Repository;
-import aplication.domain.model.ParticipanteModel;
+import aplication.domain.model.PersonaModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 
 @Component
-public class ObtenerParticipantesUseCases {
+public class ObtenerPersonasUseCases {
 
     @Autowired
     private Repository repositoryLocal;
 
-    public List<ParticipanteModel> obtenerParticipantes(){
-        return repositoryLocal.obtenerParticipantes();
+    public PersonaModel obtenerPersona( String rut){
+        return repositoryLocal.obtenerPersona( rut );
     }
 }

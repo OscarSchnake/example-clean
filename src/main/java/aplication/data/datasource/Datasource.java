@@ -1,9 +1,9 @@
 package aplication.data.datasource;
 
-import aplication.data.entity.ParticitanteEntity;
+import aplication.data.entity.PersonaEntity;
 
 import java.util.List;
 
 public interface Datasource {
-    List<ParticitanteEntity> obtenerPartcipantes();
+    PersonaEntity obtenerPersona( String rut );
 }

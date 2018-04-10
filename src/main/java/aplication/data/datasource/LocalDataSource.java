@@ -1,6 +1,6 @@
 package aplication.data.datasource;
 
-import aplication.data.entity.ParticitanteEntity;
+import aplication.data.entity.PersonaEntity;
 import aplication.data.local.Local;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,10 +11,10 @@ import java.util.List;
 public class LocalDataSource implements Datasource {
 
     @Autowired
-    private Local participantesLocal;
+    private Local personasLocal;
 
     @Override
-    public List<ParticitanteEntity> obtenerPartcipantes() {
-        return participantesLocal.obtenerPartcipantes();
+    public PersonaEntity obtenerPersona(String rut) {
+        return personasLocal.obtenerPersona(rut);
     }
 }

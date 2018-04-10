@@ -1,9 +1,8 @@
 package aplication.data.repository;
 
-import aplication.domain.model.ParticipanteModel;
+import aplication.domain.model.PersonaModel;
 
-import java.util.List;
 
 public interface Repository {
-    List<ParticipanteModel> obtenerParticipantes();
+    PersonaModel obtenerPersona(String rut);
 }

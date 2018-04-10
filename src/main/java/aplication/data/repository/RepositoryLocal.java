@@ -2,8 +2,8 @@ package aplication.data.repository;
 
 import aplication.data.datasource.Datasource;
 import aplication.data.factory.FactoryLocal;
-import aplication.data.mapper.ParticipanteModelToEntity;
-import aplication.domain.model.ParticipanteModel;
+import aplication.data.mapper.PersonaModelToEntity;
+import aplication.domain.model.PersonaModel;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -18,7 +18,7 @@ public class RepositoryLocal implements Repository{
     }
 
     @Override
-    public List<ParticipanteModel> obtenerParticipantes() {
-        return ParticipanteModelToEntity.reverse(localDataSource.obtenerPartcipantes());
+    public PersonaModel obtenerPersona( String rut) {
+        return PersonaModelToEntity.reverse(localDataSource.obtenerPersona(rut));
     }
 }

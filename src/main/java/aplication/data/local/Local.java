@@ -1,9 +1,9 @@
 package aplication.data.local;
 
-import aplication.data.entity.ParticitanteEntity;
+import aplication.data.entity.PersonaEntity;
 
 import java.util.List;
 
 public interface Local {
-    List<ParticitanteEntity> obtenerPartcipantes();
+    PersonaEntity obtenerPersona(String rut);
 }

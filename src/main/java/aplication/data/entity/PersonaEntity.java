@@ -3,6 +3,9 @@ package aplication.data.entity;
 import lombok.Data;
 
 @Data
-public class ParticitanteEntity {
+public class PersonaEntity {
+    private String rut;
     private String nombre;
+
+
 }
